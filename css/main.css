@@ -1,9 +1,13 @@
+/* 메인 화면 css (Main Screen css) */
+
+
 *{
     box-sizing: border-box;
     margin: 0px;
 }
 
 
+/* 배경화면 (background) */
 body{
     margin: 0;
     padding: 0;
@@ -19,10 +23,13 @@ body{
   
 }
 
+/* 에밀리 글자 설정 (Emily text size) */
 .name {
     font-size: 30px;
 }
 
+
+/* 로그인, 회원가입, 언어설정 아이콘 (login,  signup, change language icon) */
 .header{
     display: flex;
     flex-direction: row;
@@ -39,22 +46,19 @@ body{
 }
 
 
-
+/* 로그인, 회원가입 글자 굵기 설정 (login, signup text boldness) */
 .login, .signup{
     font-weight: bold;
 }
 
-.login:hover{
+
+/*로그인, 회원가입, 언어설정에 마우스 놓았을때 (When mouse is hovered over login,signup, language settings)*/
+.login:hover,.signup:hover,#globe:hover
+{
     color :white;
 }
 
-.signup:hover{
-    color: white;
-}
 
-#globe:hover{
-    color: white;
-}
 
 
 
