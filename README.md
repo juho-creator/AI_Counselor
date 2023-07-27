@@ -9,8 +9,15 @@ I think the following are the main reasons why those in need do not ask for help
 4. Lack of Awareness on mental health : People with serious mental health issues avoid their problems and pretend they are ok even if they're not
 
 
+Fortunately with the advent of AI, it is possible to tackle the challenges mentioned above. 
+I'm very excited to announce personal AI counselor, Emily.
+Emily is available 24/7 for anyone, anywhere in the world with internet connection.
 
-Fortunately with the advent of AI, it is possible to tackle the challenges mentioned above.
+And here's how Emily could help people going through hard times :
+1. Offers more private space : Patients could feel more comfortable expressing their feelings without having to talk to another person.
+2. More affordable : As AI counseling service is relatively cheaper than normal counselors
+3. Service available anytime : The service is available 24/7 as long as there's no issue in the server
+4. Raise awareness of mental health issues : AI counselor can educate patients on mental health, and positive mindsets to help address mental health issues.
 
 
 
