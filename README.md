@@ -24,6 +24,18 @@ In order to give our user a more personalized experience, we ask user for their 
 
 # Concerns
 
+Although Emily sounds like a flawless AI counselor, the following problems are unavoidable and must be taken into consideration :
+
+1. **Privacy issues**
+
+User's privacy is extremely important to our service. However, new AI technologies has made it easier for hackers to attack the server with different ways.
+It would be very challenging to prevent every possible attacks, but we could always find cybersecurity flaws by shutting down server at certain time of the day, and simluate cyberattacks.
+
+2.**Hallucination**
+To this day (27th July  2023), chatgpt could still experience hallucination, informing users unverified information and possibly misguiding them. Inorder to address the issue, it is crucial for us to set strict guard rails via prompt engineering to train it to not say things that
+it is not sure about.
+
+
 
 # Training the counselor
 We're creating 16 different AI counselors for each MBTI`s via prompt engineering. And here's how we'll do it :
@@ -41,5 +53,6 @@ https://www.16personalities.com/intj-personality (영어)
 
 
 **Final Prompt** (Assigning role to Chatgpt) 
+
 [INFP]에 관한 정보는 일단 여기까지 하자.  너가 학습한 정보를 정리해서 전부 말해줘. 그런후 최종적으로 [INFP] AI심리상담자로서 너가 어떻게 [INFP]가 성장할수 있도록 도와줄것인지 설명해봐.
 
