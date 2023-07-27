@@ -1,64 +1,68 @@
+<!-- 상담원 페이지 (counselor.html) -->
+
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- JavaScript 파일 연결 (Linking JavaScript file) -->
   <script src="../../javascript/counselor.js"></script>
   <title>ChatGPT Integration</title>
 </head>
 <body>
+  <!-- 채팅창 컨테이너 (Chat container) -->
   <div id="chat-container">
     <div id="chat-display"></div>
+    <!-- 채팅 입력창 및 전송 버튼 (Chat input box and send button) -->
     <div class="chat-box">
       <input type="text" id="user-input" placeholder="Type your message...">
-      <button  class="send-button"   onclick="sendMessage()">Send</button>
+      <button class="send-button" onclick="sendMessage()">Send</button>
     </div>
   </div>
 
+  <!-- Axios 라이브러리 연결 (Linking Axios library) -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- script.js 파일 연결 (Linking script.js file) -->
   <script src="script.js"></script>
   <style>
-  /* Replace with your preferred styles for the chat messages */
-   .chat-box{ 
+    /* 채팅창 스타일 (Chat box style) */
+    .chat-box { 
       display: flex;
       flex-direction: row;
       position: fixed;
       bottom: 70px;
       left: 50%;
       transform: translateX(-50%);
-   }
+    }
 
-   #user-input{
-    border-radius: 7px;
-    height: 40px;
-    width: 500px;
-    margin-right: 5px;
-   }
+    /* 사용자 입력창 스타일 (User input box style) */
+    #user-input {
+      border-radius: 7px;
+      height: 40px;
+      width: 500px;
+      margin-right: 5px;
+    }
 
-   .send-button{
+    /* 전송 버튼 스타일 (Send button style) */
+    .send-button {
       border-radius: 30px;
-   }
+    }
 
-  .user-message {
-    background-color: #66c2ff;
-    color: #fff;
-    padding: 8px;
-    margin: 5px;
-    border-radius: 8px;
-  }
+    /* 사용자 메시지 스타일 (User message style) */
+    .user-message {
+      background-color: #66c2ff;
+      color: #fff;
+      padding: 8px;
+      margin: 5px;
+      border-radius: 8px;
+    }
 
-
-
-
-  
-  .bot-message {
+    /* 봇 메시지 스타일 (Bot message style) */
+    .bot-message {
       background-color: #f0f0f0;
       color: #333;
       padding: 8px;
       margin: 5px;
       border-radius: 8px;
     }
-
- 
-
   </style>
 </body>
 </html>
