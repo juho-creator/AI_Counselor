@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>What's your MBTI?</title>
+</head>
+<body>
+    <div class="askmbti">What's your MBTI?</div>
+    <div class="button-container">
+        <input type="text" placeholder="Type in your MBTI" id="mbti" maxlength="4">
+        <button onclick="redirectToCounselor()">Next</button>
+    </div>
+    <div class="findMbti">Click <a href="https://www.16personalities.com/free-personality-test">here</a> to take the MBTI test</div>
+
+    <script>
+        // Add event listener to the input element (accept CAP alphabets only)
+        document.getElementById('mbti').addEventListener('input', allowAlphabets);
+
+        // Function to redirect to counselor.html with the MBTI information
+        function redirectToCounselor() {
+            var mbtiInput = document.getElementById('mbti').value;
+            var isValidMbti = isValidMBTI(mbtiInput);
+
+            if (isValidMbti) {
+                window.location.href = `counselor_loading.html?mbti=${mbtiInput}`;
+            } else {
+                alert('Invalid MBTI. Please enter a valid 4-letter MBTI type.');
+            }
+        }
+
+
+        // Function to filter input and allow only alphabets
+        function allowAlphabets(event) {
+            var inputElement = document.getElementById('mbti');
+            var sanitizedValue = inputElement.value.replace(/[^a-zA-Z]/g, '');
+            inputElement.value = sanitizedValue.toUpperCase();
+        }
+
+
+        // Function to check if the entered value is a valid MBTI
+        function isValidMBTI(mbti) {
+            var validMBTIValues = ["ISTJ", "ISFJ", "INFJ", "INTJ", "ISTP", "ISFP", "INFP", "INTP", "ESTP", "ESFP", "ENFP", "ENTP", "ESTJ", "ESFJ", "ENFJ", "ENTJ"];
+            return validMBTIValues.includes(mbti.toUpperCase());
+        }
+    </script>
+</body>
+</html>

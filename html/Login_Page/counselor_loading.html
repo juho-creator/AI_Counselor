@@ -1,0 +1,55 @@
+<!-- counselor.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="../../javascript/counselor.js">
+    </script>
+    <script>
+        // Load counselor.html that matches with MBTI
+            document.addEventListener('DOMContentLoaded', function () {
+        
+        // Get the MBTI type from the URL parameter
+        const mbtiType = getMBTITypeFromURL();
+
+        // Display the counselor's information
+        displayCounselorInfo(mbtiType);
+
+        // Start the countdown timer and redirect after 10 seconds
+        getTokenTimer(mbtiType);       
+        } 
+    );
+    </script>
+    <title>Counselor</title>
+    <style>
+        /* Talk button */
+        #talk-button{
+            margin-top: 20px;
+            border-radius: 7px;
+            background: green;
+        }
+
+        #talk-button:hover{
+            background:rgb(92, 255, 47);
+        }
+
+        #talk-button:active{
+            background: greenyellow;
+        }
+
+    </style>
+    
+</head> 
+<body>
+    <div class="counselor-info">
+        <div id="counselor-photo"></div>
+        <h1 id="counselor-name"></h1>
+        <p id="counselor-description"></p>
+        <div id="time"></div>
+        
+        <!-- Add other counselor information here -->
+    </div>
+    <!-- <button id="talk-button"></button> -->
+</body>
+</html>

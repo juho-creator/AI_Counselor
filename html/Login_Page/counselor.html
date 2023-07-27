@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="../../javascript/counselor.js"></script>
+  <title>ChatGPT Integration</title>
+</head>
+<body>
+  <div id="chat-container">
+    <div id="chat-display"></div>
+    <div class="chat-box">
+      <input type="text" id="user-input" placeholder="Type your message...">
+      <button  class="send-button"   onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+  <style>
+  /* Replace with your preferred styles for the chat messages */
+   .chat-box{ 
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      bottom: 70px;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+
+   #user-input{
+    border-radius: 7px;
+    height: 40px;
+    width: 500px;
+    margin-right: 5px;
+   }
+
+   .send-button{
+      border-radius: 30px;
+   }
+
+  .user-message {
+    background-color: #66c2ff;
+    color: #fff;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 8px;
+  }
+
+
+
+
+  
+  .bot-message {
+      background-color: #f0f0f0;
+      color: #333;
+      padding: 8px;
+      margin: 5px;
+      border-radius: 8px;
+    }
+
+ 
+
+  </style>
+</body>
+</html>

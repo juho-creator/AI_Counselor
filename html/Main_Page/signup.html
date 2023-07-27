@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="../../css/signup.css">
+    <script src="../../javascript/signup.js"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="page">
+            <div class="title">코드캠프 회원가입</div>
+            
+            <input type="text" placeholder="이메일을 입력해 주세요." class="inputbox" id="email">
+            <div class="error" id="email-error"></div>
+            
+            <input type="text" placeholder="이름을 입력해 주세요." class="inputbox" id="name">
+            <div class="error" id="name-error"></div>
+
+
+            <input type="password" placeholder="비밀번호를 입력해 주세요." class="inputbox" id="pswd">
+            <div class="error" id="pswd-error"></div>
+
+            <input type="password" placeholder="비밀번호를 다시 입력해 주세요." class="inputbox" id="re_pswd">
+            <div class="error" id="re-pswd-error"></div>
+
+            <div class="phone">
+                <input type="text" maxlength="3" class="numberbox" oninput="moveFocus1()" id="p1">__
+                <input type="text" maxlength="4" class="numberbox" oninput="moveFocus2()" id="p2">__
+                <input type="text" maxlength="4" class="numberbox" oninput="enableButtons()" id="p3">
+            </div>  
+
+
+            <div class="send">
+                <span class="text" id="code">000000</span>
+                <button class="send-button" disabled="true" id="send-button" onclick="sendCode()">인증번호 전송</button>
+            </div>
+            <div class="verify">
+                <span class="text" id="time">3:00</span>
+                <button class="verify-button" disabled="true" id="verify-button" onclick="confirm()">인증 확인</button>
+            </div>
+            <select class="navigation" id="navigation">
+                <option selected="true" disabled="true">지역을 선택하세요.</option>
+                <option>서울</option>
+                <option>경기</option>
+                <option>인천</option>
+            </select>
+            <div class="error" id="location-error"></div>
+
+            <div class="gender">    
+                <div class="female">
+                    <input type="radio" name="gender" id="woman_button">여성
+                </div>
+                <div class="male">                    
+                    <input type="radio" name="gender" id="man_button">남성
+                </div>
+            </div>
+            <div class="error" id="gender-error"></div>
+
+            <hr class="line">
+            <button class="reg-button" disabled="true" id="reg-button" onclick="check()">가입하기</button>
+        </div>  
+    </div>
+    
+</body>
+</html>
