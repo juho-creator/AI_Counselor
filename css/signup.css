@@ -1,14 +1,17 @@
+/* 회원가입 페이지  (signup page) */
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/* 배경화면 설정 (background settings) */
 body{
     background: green;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-*{
-    box-sizing: border-box;
-    margin: 0px;
 }
 
 .background{
@@ -19,6 +22,9 @@ body{
 }
 
 
+
+
+/* 회원가입 테두리 설정 (signup page border setting)*/
 .page{
     width: 540px;
     height: 960px;
@@ -35,6 +41,8 @@ body{
     justify-content: space-evenly;
 }
 
+
+/* 제목 설정 (title setting)  */
 .title{
     width: 380px;
     color: green;
@@ -47,6 +55,7 @@ body{
 }
 
 
+/* 입력란 설정 (InputBox Setting) */
 .inputbox {
     width: 380px;
     height: 60px;
@@ -57,25 +66,26 @@ body{
 }
 
 
+/* 입력란 클릭시 (When InputBox is clicked) */
 .inputbox:focus{
     outline: none;
     border: 1px solid blue;
 }
 
 
-
-
+/* 입력란에 마우스 놓았을때 (When mouse is hovered over InputBox) */
 .inputbox :hover{
     border: #0068FF;
 }
 
-
+/* 번호 입력란 정렬 (aligning number input box) */
 .phone{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+/* 번호 입력란 설정 (number inputbox setting) */
 .numberbox{
     width: 100px;
     height: 40px;
@@ -87,6 +97,8 @@ body{
 }
 
 
+
+/* 전송 버튼 (send button) */
 .send{
     display: flex;
     flex-direction: row;
@@ -94,7 +106,7 @@ body{
     align-items: center;
 }
 
-
+/* 전송 버튼 스타일 (send button style) */
 .send-button{
     width: 120px;
     height: 40px;
@@ -103,9 +115,9 @@ body{
     border-radius: 7px;
     border: 1px solid #D2D2D2;
     margin-left: 21px;
-
 }
 
+/* 텍스트 스타일 (text style) */
 .text{
     color: #0068FF;
     text-align: right;
@@ -116,7 +128,7 @@ body{
     line-height: normal;
 }
 
-
+/* 확인 버튼 (verify button) */
 .verify{
     display: flex;
     flex-direction: row;
@@ -124,7 +136,7 @@ body{
     align-items: center;
 }
 
-
+/* 확인 버튼 스타일 (verify button style) */
 .verify-button{
     width: 120px;
     height: 40px;
@@ -132,9 +144,9 @@ body{
     border-radius: 7px;
     margin-left: 21px;
     border: 1px solid #D2D2D2;
-
 }
 
+/* 내비게이션 박스 (navigation box) */
 .navigation{
     width: 380px;
     height: 60px;
@@ -145,17 +157,19 @@ body{
     background: #FFF;
 }
 
+/* 성별 선택 (gender selection) */
 .gender{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+/* 여성 선택 (female selection) */
 .female{
     margin-right: 20px;
 }
 
-
+/* 구분선 (line) */
 .line{
     width: 380px;
     height: 0.998px;
@@ -163,15 +177,13 @@ body{
     background: #E6E6E6;
 }
 
-
-
+/* 등록 버튼 (registration button) */
 .reg-button{
     width: 380px;
     height: 75px;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #D2D2D2;
-
 
     text-align: center;
     font-family: Noto Sans CJK KR;
@@ -181,16 +193,18 @@ body{
     line-height: normal;
 }
 
-
+/* 등록 버튼에 마우스를 올렸을 때 (hover effect on registration button) */
 .reg-button:hover{
     cursor: pointer;
 }
 
+/* 에러 텍스트 (error text) */
 .error{
     color : red;
     height: 10px;
     font-size: 11px;
 }
+
 
 
 
