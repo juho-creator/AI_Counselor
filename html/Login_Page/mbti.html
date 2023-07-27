@@ -1,22 +1,28 @@
+<!-- MBTI 페이지 (mbti.html) -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 메인 CSS 파일 연결 (Linking main CSS file) -->
     <link rel="stylesheet" href="../../css/main.css">
     <title>What's your MBTI?</title>
 </head>
 <body>
+    <!-- MBTI를 묻는 질문 (Question: What's your MBTI?) -->
     <div class="askmbti">What's your MBTI?</div>
+    <!-- MBTI 입력 창과 다음 버튼 (MBTI input box and Next button) -->
     <div class="button-container">
         <input type="text" placeholder="Type in your MBTI" id="mbti" maxlength="4">
         <button onclick="redirectToCounselor()">Next</button>
     </div>
+    <!-- MBTI 테스트를 진행할 수 있는 링크 (Link to take the MBTI test) -->
     <div class="findMbti">Click <a href="https://www.16personalities.com/free-personality-test">here</a> to take the MBTI test</div>
 
     <script>
-        // Add event listener to the input element (accept CAP alphabets only)
+        // 입력 창에 대문자 알파벳만 입력되도록 이벤트 리스너 추가
         document.getElementById('mbti').addEventListener('input', allowAlphabets);
 
-        // Function to redirect to counselor.html with the MBTI information
+        // 상담원 페이지로 MBTI 정보를 넘겨주는 함수
         function redirectToCounselor() {
             var mbtiInput = document.getElementById('mbti').value;
             var isValidMbti = isValidMBTI(mbtiInput);
@@ -28,16 +34,14 @@
             }
         }
 
-
-        // Function to filter input and allow only alphabets
+        // 입력 필터링 함수 - 대문자 알파벳만 허용
         function allowAlphabets(event) {
             var inputElement = document.getElementById('mbti');
             var sanitizedValue = inputElement.value.replace(/[^a-zA-Z]/g, '');
             inputElement.value = sanitizedValue.toUpperCase();
         }
 
-
-        // Function to check if the entered value is a valid MBTI
+        // 입력된 값이 유효한 MBTI인지 확인하는 함수
         function isValidMBTI(mbti) {
             var validMBTIValues = ["ISTJ", "ISFJ", "INFJ", "INTJ", "ISTP", "ISFP", "INFP", "INTP", "ESTP", "ESFP", "ENFP", "ENTP", "ESTJ", "ESFJ", "ENFJ", "ENTJ"];
             return validMBTIValues.includes(mbti.toUpperCase());
