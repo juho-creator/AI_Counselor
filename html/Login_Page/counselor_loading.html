@@ -1,40 +1,42 @@
-<!-- counselor.html -->
+<!-- 상담원 로딩 페이지 (counselor_loading.html) -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 메인 CSS 파일 연결 (Linking main CSS file) -->
     <link rel="stylesheet" href="../../css/main.css">
-    <script src="../../javascript/counselor.js">
-    </script>
+    <!-- 상담원 JavaScript 파일 연결 (Linking counselor JavaScript file) -->
+    <script src="../../javascript/counselor.js"></script>
     <script>
-        // Load counselor.html that matches with MBTI
-            document.addEventListener('DOMContentLoaded', function () {
+        // MBTI에 맞는 상담원 정보를 불러오는 함수 실행
+        document.addEventListener('DOMContentLoaded', function () {
         
-        // Get the MBTI type from the URL parameter
-        const mbtiType = getMBTITypeFromURL();
+            // URL 매개변수에서 MBTI 유형 가져오기
+            const mbtiType = getMBTITypeFromURL();
 
-        // Display the counselor's information
-        displayCounselorInfo(mbtiType);
+            // 상담원 정보를 표시하는 함수 실행
+            displayCounselorInfo(mbtiType);
 
-        // Start the countdown timer and redirect after 10 seconds
-        getTokenTimer(mbtiType);       
-        } 
-    );
+            // 10초 카운트다운 타이머 시작 및 리디렉션
+            getTokenTimer(mbtiType);       
+        });
     </script>
     <title>Counselor</title>
     <style>
-        /* Talk button */
-        #talk-button{
+        /* 대화 버튼 스타일 (Talk button style) */
+        #talk-button {
             margin-top: 20px;
             border-radius: 7px;
             background: green;
         }
 
-        #talk-button:hover{
-            background:rgb(92, 255, 47);
+        /* 대화 버튼에 마우스를 올렸을 때 (Hover effect on Talk button) */
+        #talk-button:hover {
+            background: rgb(92, 255, 47);
         }
 
-        #talk-button:active{
+        /* 대화 버튼을 눌렀을 때 (Active effect on Talk button) */
+        #talk-button:active {
             background: greenyellow;
         }
 
@@ -48,8 +50,10 @@
         <p id="counselor-description"></p>
         <div id="time"></div>
         
-        <!-- Add other counselor information here -->
+        <!-- 다른 상담원 정보 추가 (Add other counselor information here) -->
     </div>
+    <!-- 대화 버튼 (Talk button) -->
+    <!-- Note: The talk-button is currently commented out -->
     <!-- <button id="talk-button"></button> -->
 </body>
 </html>
