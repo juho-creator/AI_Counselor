@@ -1,4 +1,18 @@
 # AI_Counselor
+In the modern era, mental health is not taken seriously. Society stigmatizes those taking any form of mental health care services as mentally weak individuals.
+Unfortunately, this has prevented many from seeking help, deteriorating their quality of life, and extreme cases, even ending their own life.
+
+I think the following are the main reasons why those in need do not ask for help :
+1. Lack of privacy : They don't feel comfortable sharing personal issues with other people
+2. Unable to afford counseling service :
+3. Not enough time : 
+4. Lack of Awareness on mental health : People with serious mental health issues avoid their problems and pretend they are ok even if they're not
+
+
+
+Fortunately with the advent of AI, it is possible to tackle the challenges mentioned above.
+
+
 
 
 Prompt1
