@@ -32,6 +32,7 @@ User's privacy is extremely important to our service. However, new AI technologi
 It would be very challenging to prevent every possible attacks, but we could always find cybersecurity flaws by shutting down server at certain time of the day, and simluate cyberattacks.
 
 2.  **Hallucination**
+
 To this day (27th July  2023), chatgpt could still experience hallucination, informing users unverified information and possibly misguiding them. Inorder to address the issue, it is crucial for us to set strict guard rails via prompt engineering to train it to not say things that
 it is not sure about.
 
