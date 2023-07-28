@@ -1,22 +1,22 @@
 # Why do we need an AI Counselor?
 In the modern era, mental health is not taken seriously. Society stigmatizes those taking any form of mental health care services as mentally weak individuals.
-Unfortunately, this has prevented many from seeking help, deteriorating their quality of life, and extreme cases, causing them to end their own life.
+Unfortunately, this has prevented many from seeking help, deteriorating their quality of life, and in extreme cases, causing them to end their own life.
 
 I think the following are the main reasons why those in need do not ask for help :
-1. **Lack of privacy** : They don't feel comfortable sharing personal issues with a counselor. 
+1. **Lack of privacy** : People don't feel comfortable sharing personal issues with a counselor. 
 2. **Unable to afford counseling service**: Counseling service is not available within their region, or very costly.
 3. **Not enough time** : People don't have spare time to get counseling service at certain time of the day.
 4. **Lack of Awareness on mental health** : Mental health is underestimated and not given enough attention from people.
 
 Fortunately with the use of AI, I was able to come up with a possible solution to problems mentioned above. 
-I'm very excited to announce personal AI counselor, Emily.
-Emily is an AI counseling service available 24/7 for anyone, anywhere in the world with internet connection.
+I'm very excited to announce a personal AI counselor, Emily.
+Emily offers AI counseling service 24/7 for anyone, anywhere in the world with internet connection.
 
 Here's how Emily could help people going through hard times :
-1. **Offers more private space** : Patients could feel more comfortable expressing their feelings without having to talk to another person.
-2. **More affordable** : As AI counseling service is relatively cheaper than normal counselors
+1. **Offers more private space** : Users could feel more comfortable expressing their feelings without having to talk to another person.
+2. **More affordable** : AI counseling service is relatively cheaper than counseling service from counselors
 3. **Service available anytime** : The service is available 24/7 as long as there's no issue in the server
-4. **Raise awareness of mental health issues** : AI counselor can educate patients on mental health, and positive mindsets to help address mental health issues.
+4. **Raise awareness of mental health issues** : AI counselor can educate users on mental health, and positive mindsets to help address mental health issues depending on the users personal needs.
 
 In order to give our user a more personalized experience, we ask user for their MBTI and use their personality traits to match the best AI counselor.
 
@@ -29,12 +29,13 @@ Although Emily sounds like a flawless AI counselor, the following problems are u
 1. **Privacy issues**
 
 User's privacy is extremely important to our service. However, new AI technologies has made it easier for hackers to attack the server with different ways.
-It would be very challenging to prevent every possible attacks, but we could always find cybersecurity flaws by shutting down server at certain time of the day, and simluate cyberattacks.
+It would be very challenging to prevent every possible attacks, but we could always check our server regularly to reduce flaws in our 
+cybersecurity.
 
 2.  **Hallucination**
 
 To this day (27th July  2023), chatgpt could still experience hallucination, informing users unverified information and possibly misguiding them. Inorder to address the issue, it is crucial for us to set strict guard rails via prompt engineering to train it to not say things that
-it is not sure about.
+it is not sure about. And we need regular RLHF(Reinforcement Learning from Human Feedback) based on response review from users and psychologist for improving response of our AI counselor.
 
 
 
