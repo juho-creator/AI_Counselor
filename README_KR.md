@@ -56,3 +56,17 @@ https://www.16personalities.com/intj-personality (영어)
 
 [INFP]에 관한 정보는 일단 여기까지 하자.  너가 학습한 정보를 정리해서 전부 말해줘. 그런후 최종적으로 [INFP] AI심리상담자로서 너가 어떻게 [INFP]가 성장할수 있도록 도와줄것인지 설명해봐.
 
+
+위 과정을 통해 아래와 같은 심리상담사를 생성할 수 있었습니다 :
+INTJ 심리상담자
+https://chat.openai.com/share/7b8c06c8-d5bf-4a6d-8461-320c567975e7
+   
+INTP 심리상담자
+https://chat.openai.com/share/90bfdd30-ebae-4ec8-b075-58e0ebf77adc
+
+
+INFP 심리상담자
+https://chat.openai.com/share/e527c1ff-e016-4158-993d-ffd51de581a6
+
+하지만 이렇게 훈련된 AI는 자신의 역할을 계속 잊기 때문에
+자기 역할을 계속 기억할 수 있도록 프롬프팅으로 개선할 예정입니다.
