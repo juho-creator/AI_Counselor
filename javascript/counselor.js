@@ -6,6 +6,10 @@ function getMBTITypeFromURL() {
     return urlParams.get('mbti');
 }
 
+ // Get the MBTI type from the URL parameter
+ const mbtiType = getMBTITypeFromURL();
+
+
 // Display the counselor's information based on the MBTI type
 function displayCounselorInfo(mbtiType) {
 
@@ -133,7 +137,7 @@ const getTokenTimer = (mbtiType) =>
 
 /*Counselor page*/
 // Replace 'YOUR_API_KEY' with your actual ChatGPT API key
-const apiKey = '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';
+const apiKey = '';
 const apiEndpoint = 'https://api.openai.com/v1/chat/completions';
 
 // Function to send user message to the API
@@ -165,13 +169,14 @@ async function sendMessage() {
       model: 'gpt-3.5-turbo',
       messages: [
         {
-          role: 'user',
-          content: userInput,
-        },
-        {
           role: 'system',
           content: systemMessage,
         },
+        {
+          role: 'user',
+          content: userInput,
+        },
+        
       ],
     }, {
       headers: {
