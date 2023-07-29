@@ -137,7 +137,7 @@ const getTokenTimer = (mbtiType) =>
 
 /*Counselor page*/
 // Replace 'YOUR_API_KEY' with your actual ChatGPT API key
-const apiKey = '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';
+const apiKey = '';
 const apiEndpoint = 'https://api.openai.com/v1/chat/completions';
 
 // Function to send user message to the API
