@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: darkgreen;
+  display: flex;
+  color: yellow;
+}
+
+.name {
+  font-size: 30px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  top: 10px;
+  right: 40px;
+
+  width: 100px;
+  height: 20px;
+  font-size: 1px;
+}
+
+/* Hide the language container by default */
+.language-container {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  background-color: darkgreen;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  padding: 5px;
+  z-index: 1;
+}
+
+/* Style the language options within the container */
+.language-option {
+  cursor: pointer;
+  color: yellow;
+  padding: 3px;
+}
+
+/* Show the language container when globe icon is hovered */
+#globe:hover + .language-container {
+  display: block;
+}
+
+.login,
+.signup {
+  font-weight: bold;
+}
+
+.login:hover,
+.signup:hover,
+#globe:hover {
+  color: white;
+}
+
+#globe:hover ~ .language-container {
+  display: block;
+}

@@ -1,0 +1,52 @@
+<!-- 로그인 페이지 (login.html) -->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 페이지 제목 (Page Title) -->
+    <title>Login</title>
+
+    <!-- 로그인 CSS 파일 연결 (Linking login CSS file) -->
+    <link rel="stylesheet" href="../../css/login.css" />
+
+    <!-- 로그인 JavaScript 파일 연결 (Linking login JavaScript file) -->
+    <script src="../../javascript/login.js"></script>
+  </head>
+  <body>
+    <!-- 이메일 입력란 (Email input box) -->
+    <input type="text" placeholder="Email" class="inputbox" id="email" />
+
+    <!-- 비밀번호 입력란 (Password input box) -->
+    <input
+      type="password"
+      placeholder="Password"
+      class="inputbox"
+      id="password"
+    />
+
+    <!-- 계속하기 버튼 (Continue button) -->
+    <button onclick="setup()" id="continue-btn">Continue</button>
+    <script>
+      // 언어 설정 (language settings)
+      displayLoginInfo();
+
+      // 입력란 불러오기 (Calling inputbox)
+      var email = document.getElementById("email");
+      var password = document.getElementById("password");
+
+      // 이메일 입력란에서 Enter 누를시 비밀번호 입력란으로 이동 (Pressing Enter in the email input moves to the password input)
+      email.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          document.getElementById("password").focus();
+        }
+      });
+
+      // 비밀번호 입력란에서 Enter 누를시 로그인 버튼 클릭 (Pressing Enter in the password input activates the login button)
+      password.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          document.getElementById("continue-btn").click();
+        }
+      });
+    </script>
+  </body>
+</html>

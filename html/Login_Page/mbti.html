@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>What's your MBTI?</title>
+    <script src="../../javascript/mbti.js"></script>
+</head>
+<body>
+    <div class="askmbti" id="askmbti">What's your MBTI?</div>
+    <div class="button-container">
+        <input type="text" placeholder="Type in your MBTI" id="mbti" maxlength="4">
+        <button onclick="redirectToCounselor()" id="next_button">Next</button>
+    </div>
+    <div class="findMbti">Click <a href="https://www.16personalities.com/free-personality-test">here</a> to take the MBTI test</div>
+
+    <script>
+        // 언어 변경
+        displayMBTIInfo();        
+        
+        // Add event listener to the input element (accept CAP alphabets only)
+        document.getElementById('mbti').addEventListener('input', allowAlphabets);
+
+        var mbti  = document.getElementById("mbti");
+       
+        mbti.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            document.getElementById("next_button").click();
+        }
+        });
+
+    
+
+
+</script>
+</body>
+</html>

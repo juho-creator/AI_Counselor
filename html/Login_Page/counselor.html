@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../../javascript/counselor.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6341e1f38c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>ChatGPT Integration</title>
+  </head>
+  <body>
+    <div id="chat-container">
+      <div id="chat-display">
+        <div class="bot-message" id="greeting"></div>
+      </div>
+      <div class="chat-box">
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button class="send-button" onclick="sendMessage()" id="send-btn">
+          send
+        </button>
+      </div>
+    </div>
+
+    <style>
+      #chat-display {
+        position: absolute;
+        width: 90%;
+        height: 70%;
+        border: 1px solid red;
+        overflow: auto;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: auto;
+      }
+
+      .user-message {
+        background-color: #66c2ff;
+        color: #fff;
+        padding: 8px;
+        margin: 5px;
+        border-radius: 8px;
+      }
+
+      .user-message::before {
+        content: "";
+        display: inline-block;
+        width: 20px; /* Adjust the width of the image */
+        height: 20px; /* Adjust the height of the image */
+        background: url("user.png") no-repeat center/cover fixed;
+        margin-right: 10px;
+      }
+
+      .bot-message {
+        background-color: #f0f0f0;
+        color: #333;
+        padding: 8px;
+        margin: 5px;
+        border-radius: 8px;
+      }
+
+      .bot-message::before {
+        content: "";
+        display: inline-block;
+        width: 20px; /* Adjust the width of the image */
+        height: 20px; /* Adjust the height of the image */
+        background: url("elonmusk.jpeg") no-repeat center/cover fixed;
+        margin-right: 10px;
+      }
+
+      /* Replace with your preferred styles for the chat messages */
+      .chat-box {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        width: 50%;
+        height: 10%;
+        border: 1px solid red;
+        bottom: 10px; /* Adjust bottom position as needed */
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .input-container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      #user-input {
+        border-radius: 7px;
+        height: 80%;
+        width: 90%;
+        margin-right: 5px;
+      }
+
+      .send-button {
+        border-radius: 30px;
+        width: 10%;
+        height: 100%;
+        text-align: center;
+        font-size: 10%;
+        overflow: hidden;
+      }
+    </style>
+
+    <script>
+      // displayGreeting();
+      var input = document.getElementById("user-input");
+
+      input.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          document.getElementById("send-btn").click();
+        }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>

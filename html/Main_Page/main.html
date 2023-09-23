@@ -1,0 +1,53 @@
+<!-- 메인 페이지 (main.html) -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 메인 JavaScript 파일 연결 (Linking main JavaScript file) -->
+    <script src="../../javascript/main.js"></script>
+
+    <!-- 메인 CSS 파일 연결 (Linking main CSS file) -->
+    <link rel="stylesheet" href="../../css/main.css" />
+
+    <!-- 페이지 제목 (Page Title) -->
+    <title>Your AI counselor, Emily</title>
+
+    <!-- Font Awesome 아이콘 라이브러리 연결 (Linking Font Awesome icon library) -->
+    <script
+      src="https://kit.fontawesome.com/6341e1f38c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let lang = window.localStorage.setItem("language", "en");
+    </script>
+  </head>
+  <body>
+    <!-- 헤더 (Header) -->
+    <div class="header">
+      <!-- 로그인 버튼 (Login button) -->
+      <div class="login" id="login" onclick="loginElement()">login</div>
+
+      <!-- 회원가입 버튼 (Signup button) -->
+      <div class="signup" id="signup" onclick="signupElement()">signup</div>
+
+      <!-- 언어 변경 버튼 (Language change button) -->
+      <i
+        class="fa-solid fa-globe"
+        id="globe"
+        onclick="toggleLanguageContainer()"
+      ></i>
+
+      <!-- 언어 선택 컨테이너 (Language selection container) -->
+      <div class="language-container" id="language-container">
+        <div class="language-option" onclick="selectLanguage('ko')">한국어</div>
+        <div class="language-option" onclick="selectLanguage('en')">English</div>
+        <div class="language-option" onclick="selectLanguage('zh')">中文</div>
+      </div>
+    </div>
+
+    <!-- 제목 (Title) -->
+    <div class="title" id="title">Introducing your AI counselor</div>
+
+    <!-- 이름 (Name) -->
+    <div class="name" id="name">Emily 😀</div>
+  </body>
+</html>
