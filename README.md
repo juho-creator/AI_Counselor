@@ -58,3 +58,5 @@ https://www.16personalities.com/intj-personality (영어)
 
 [INFP]에 관한 정보는 일단 여기까지 하자.  너가 학습한 정보를 정리해서 전부 말해줘. 그런후 최종적으로 [INFP] AI심리상담자로서 너가 어떻게 [INFP]가 성장할수 있도록 도와줄것인지 설명해봐.
 
+
+By repeating this process for all 16 MBTIs, we were able to come up with the most appropriate prompt for specialized counselor of each MBTI
