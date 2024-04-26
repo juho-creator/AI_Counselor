@@ -1,3 +1,5 @@
+[![English](https://img.shields.io/badge/lang-English-blue.svg)](https://github.com/juho-creator/AI_Counselor/blob/main/README.md)
+
 # 왜 AI 상담사가 필요한가요?
 현대 사회에서는 정신 건강의 중요성이 충분히 인식되지 않습니다. 사회는 심리 상담 서비스를 받는 사람들을 정신적으로 약한 개인들로 비난합니다.
 불행하게도, 이러한 인식으로 인해 많은 사람들이 도움을 구하지 않고 삶의 질이 저하되고, 극단적인 경우에는 스스로 생명을 끝내는 결과를 초래합니다.
