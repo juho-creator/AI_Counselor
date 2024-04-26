@@ -22,6 +22,7 @@ Here's how Emily could help people going through hard times :
 4. **Raise awareness of mental health issues** : AI counselor can educate users on mental health, and positive mindsets to help address mental health issues depending on the users personal needs.
 
 In order to give our user a more personalized experience, we ask user for their MBTI and use their personality traits to match the best AI counselor.
+</br></br></br></br>
 
 
 
@@ -39,6 +40,8 @@ cybersecurity.
 
 To this day (27th July  2023), chatgpt could still experience hallucination, informing users unverified information and possibly misguiding them. Inorder to address the issue, it is crucial for us to set strict guard rails via prompt engineering to train it to not say things that
 it is not sure about. And we need regular RLHF(Reinforcement Learning from Human Feedback) based on response review from users and psychologist for improving response of our AI counselor.
+</br></br></br></br>
+
 
 
 
