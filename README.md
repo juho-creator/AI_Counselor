@@ -1,3 +1,6 @@
+[![English](https://img.shields.io/badge/lang-English-blue.svg)](https://github.com/juho-creator/AI_Counselor/blob/main/README.md)
+[![한국어](https://img.shields.io/badge/lang-한국어-red.svg)](https://github.com/juho-creator/AI_Counselor/blob/main/README_KR.md)
+
 # Why do we need an AI Counselor?
 In the modern era, mental health is not taken seriously. Society stigmatizes those taking any form of mental health care services as mentally weak individuals.
 Unfortunately, this has prevented many from seeking help, deteriorating their quality of life, and in extreme cases, causing them to end their own life.
